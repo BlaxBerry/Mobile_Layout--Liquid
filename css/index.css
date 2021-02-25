@@ -67,7 +67,7 @@ img {
 }
 
 
-/* banner  */
+/* search banner  */
 
 .search-wrap {
     height: 40px;
@@ -140,8 +140,47 @@ img {
 
 /* slider */
 
+.main-content .slider {
+    position: relative;
+    overflow: hidden;
+}
+
 .main-content .slider img {
     width: 100%;
+}
+
+.slider ul {
+    width: 500%;
+    overflow: hidden;
+    /*clear float*/
+    margin-left: -100%;
+}
+
+.slider ul li {
+    float: left;
+    width: 20%;
+}
+
+.slider ol {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider ol li {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*transtion animation*/
+    transition: all .8s;
+}
+
+.slider ol li.current {
+    width: 30px;
+    background-color: white;
 }
 
 

@@ -1,6 +1,7 @@
 # Liquid Layout Mobile Static Site
 
-## body
+## Layout
+#### body
 ```css
 body{
     /*width = window.width*/
@@ -11,8 +12,8 @@ body{
     margin: 0 auto;
 }
 ```
-
-## header
+---
+#### header
 there are 4 boxs in a line,i used <li> tags
 ```html
   <header class="app">
@@ -25,8 +26,7 @@ there are 4 boxs in a line,i used <li> tags
     </header>
 ```
 ---
-
-## banner
+#### banner
 **圣杯布局**
 ```html
  <div class="search-wrap">
@@ -37,7 +37,6 @@ there are 4 boxs in a line,i used <li> tags
 ```
 **两侧box**固定高宽
 **中间box**百分比宽度，固定高，设定margin
-
 ```css
 .search-wrap {
     height: 40px;
@@ -51,10 +50,8 @@ there are 4 boxs in a line,i used <li> tags
     color: white;
 }
 ```
-
 ---
-
-## nav
+#### nav
 ``` html
        <nav>
             <a href="javascript:;">
@@ -78,3 +75,10 @@ there are 4 boxs in a line,i used <li> tags
         </nav>
 ```
 
+
+## API Events
+
+### slider_box 
+1. move by itself
+2. move by finger touch
+#### setInterval
