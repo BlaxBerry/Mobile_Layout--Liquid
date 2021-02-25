@@ -39,7 +39,13 @@ img {
     float: left;
     text-align: center;
     line-height: 40px;
+}
+
+.app ul li a {
     color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .app ul li:nth-child(1) img {
@@ -79,6 +85,7 @@ img {
     text-align: center;
     line-height: 40px;
     color: white;
+    z-index: 222;
 }
 
 .search-btn {
@@ -136,6 +143,10 @@ img {
 
 
 /* content */
+
+.main-content {
+    position: relative;
+}
 
 
 /* slider */
@@ -211,6 +222,24 @@ nav a img {
 .main-content .item img {
     width: 100%;
 }
+
+
+/* back to top  */
+
+.goback {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    z-index: 222;
+    height: 80px;
+    width: 80px;
+    background: url(../images/top.png) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+
+/* footer */
 
 footer {
     height: 40px;
